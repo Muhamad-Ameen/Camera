@@ -9,7 +9,7 @@ def camera():
     while True:
         success, img = cap.read()
         cv2.cvtColor(img, cv2.COLOR_RGBA2BGR)
-        cv2.imshow('Muhamad Ameen', img)
+        cv2.imshow('Camera', img)
         if cv2.waitKey(1) & 0xff == ord('M'):
             break
 
